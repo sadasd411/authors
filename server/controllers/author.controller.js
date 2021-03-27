@@ -35,10 +35,11 @@ module.exports={
             console.log("in author create");
             console.log(err);
             // res.json is the equivalent of a return from the function
-            res.json( {
-              theErrObject: err,
-              message: "There was an error"
-            } );
+            // res.json( {
+            //   theErrObject: err,
+            //   message: "There was an error"
+            // } );
+            res.json(err);
         });
     },
     update: (req, res) => {
